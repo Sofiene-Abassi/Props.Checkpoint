@@ -8,6 +8,7 @@ function Profile(props) {
             <h2 style={{textAlign:"center"}}>{props.Bio}</h2>
             <h3 style={{color:"blue",fontFamily:"Lucida Handwriting"}}>He is also a {props.Profession}</h3>
             {props.children}
+            {props.handleAlert(props.FullName)}
 
         </div>
     )
